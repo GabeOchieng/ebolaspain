@@ -1,4 +1,8 @@
 from twython import Twython, TwythonError
+import sys
+import datetime
+
+i = datetime.datetime.now()
 
 APP_KEY = '***REMOVED***'
 APP_SECRET = '***REMOVED***'
@@ -7,12 +11,9 @@ OAUTH_TOKEN_SECRET = '***REMOVED***'
 
 status = ''
 
-fd = open('data.dat','r')
-line = fd.readline()
-
-for d in line.split(";")[:-1]:
-	status += d + '\n'
-status += line.split(";")[-1]
+fd = open('db.txt','r')
+status = i.strftime('%d%b %H:%Mh') + "\n" + fd.read()
+print len(status)
 
 # Requires Authentication as of Twitter API v1.1
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
@@ -24,4 +25,4 @@ except TwythonError as e:
     print e
     sys.exit()
 
-print "[+] Timeline updated..."
+print "[+] Timeline updated succesfully..."

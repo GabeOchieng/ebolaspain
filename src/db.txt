@@ -1,8 +1,9 @@
-EBOLA
-Contagiados en Africa:
- Repatriados: 2, Muertos: 2
 
-En EspañC Infectados: 1, 
- Graves: 1, 
- Obervació13
+Contagios en Africa:
+ Repatriados 2, Muertos 2
 
+Contagios en España:
+ Infectados 1
+ Graves 1
+ Aisladas 13
+ Seguimiento 56
