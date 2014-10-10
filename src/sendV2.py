@@ -1,17 +1,19 @@
 from twython import Twython, TwythonError
 import sys
 import datetime
+import os
 
+folder = os.path.dirname(os.path.realpath(__file__))
 i = datetime.datetime.now()
 
-APP_KEY = 'AWP9yh9U2HaPPDxtdzEkxllxg'
-APP_SECRET = 'HlhxsHWqyYCs2QHSskwexrAAkXzxQUBNhIeMO6FIMlHbDmGLHl'
-OAUTH_TOKEN = '2820782380-OANu0vi1fQoAO1BN7g3AdtCx21j2toIAsLFhkqu'
-OAUTH_TOKEN_SECRET = 'fxuUy7rmE25by5WDknjSI80KB5dHhePMNZftTCogUC4ZR'
+APP_KEY = '***REMOVED***'
+APP_SECRET = '***REMOVED***'
+OAUTH_TOKEN = '***REMOVED***'
+OAUTH_TOKEN_SECRET = '***REMOVED***'
 
 status = ''
 
-fd = open('db.txt','r')
+fd = open(os.path.join(folder,'db.txt'),'r')
 status = fd.read() + "\n" + i.strftime('%d%b %H:%Mh') + " #ebola"
 print len(status)
 
