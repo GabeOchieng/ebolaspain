@@ -12,7 +12,7 @@ OAUTH_TOKEN_SECRET = '***REMOVED***'
 status = ''
 
 fd = open('db.txt','r')
-status = i.strftime('%d%b %H:%Mh') + "\n" + fd.read()
+status = i.strftime('%d%b %H:%Mh') + "\n" + fd.read() + "\n#ebola"
 print len(status)
 
 # Requires Authentication as of Twitter API v1.1
