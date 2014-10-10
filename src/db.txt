@@ -1,8 +1,8 @@
-Contagios en Africa
- Repatriados 2, Muertos 2
- 
-Contagios en España
+Contagios en España:
  Infectados 1
  Graves 1
- Aisladas 13
+ Aislados 13
  Seguimiento 56
+
+Repatriados de Africa: 2
+ Muertos 2

@@ -4,15 +4,15 @@ import datetime
 
 i = datetime.datetime.now()
 
-APP_KEY = '***REMOVED***'
-APP_SECRET = '***REMOVED***'
-OAUTH_TOKEN = '***REMOVED***'
-OAUTH_TOKEN_SECRET = '***REMOVED***'
+APP_KEY = 'AWP9yh9U2HaPPDxtdzEkxllxg'
+APP_SECRET = 'HlhxsHWqyYCs2QHSskwexrAAkXzxQUBNhIeMO6FIMlHbDmGLHl'
+OAUTH_TOKEN = '2820782380-OANu0vi1fQoAO1BN7g3AdtCx21j2toIAsLFhkqu'
+OAUTH_TOKEN_SECRET = 'fxuUy7rmE25by5WDknjSI80KB5dHhePMNZftTCogUC4ZR'
 
 status = ''
 
 fd = open('db.txt','r')
-status = i.strftime('%d%b %H:%Mh') + "\n" + fd.read() + "\n#ebola"
+status = fd.read() + "\n" + i.strftime('%d%b %H:%Mh') + " #ebola"
 print len(status)
 
 # Requires Authentication as of Twitter API v1.1
