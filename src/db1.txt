@@ -1,5 +1,6 @@
 Contagios en España:
- Infectados: 1 (grave)
- Aislados sin fiebre: 16 Madrid, 1 Santander
- Seguimiento en casa: 56
+ Infectados 1 (grave)
+ Aislados sin fiebre 16 Madrid, 1 Santander
+ Seguimiento 56
+ Dimisiones 0
  
