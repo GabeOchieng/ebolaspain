@@ -1,0 +1,9 @@
+*.pyc
+*.zip
+*.pdf
+*.docx
+*.odt
+*.pid
+*.old
+*.log
+src/local_fabfile.py
