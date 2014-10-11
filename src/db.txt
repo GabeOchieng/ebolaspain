@@ -1,8 +1,6 @@
 Contagios en España:
- Infectados 1
- Graves 1
- Aislados 17
- Seguimiento 56
-
-Repatriados de Africa: 2
- Muertos 2
+ Infectados: 1
+ Graves: 1
+ Aislados: 17 Madrid, 1 Santander
+ Seguimiento: 56
+ 
