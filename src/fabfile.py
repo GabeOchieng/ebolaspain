@@ -26,7 +26,7 @@ def virtualenv(command):
 def pushpull(branch='next'):
     #Local commands
     with lcd(env.localfolder):
-        local('git commit -a -m "test"')
+        local('git commit -am \"test\"')
         local('git push %s %s'% (env.remotename,branch))
     #Remote commands
     with cd(env.remotedir):
