@@ -1,6 +1,5 @@
 Contagios en España:
  Infectados: 1
  Graves: 1
- Aislados: 17 Madrid, 1 Santander
+ Aislados: 17 Madrid, <b>1 Santander</b>
  Seguimiento: 56
- 
