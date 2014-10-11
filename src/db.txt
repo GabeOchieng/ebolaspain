@@ -1,5 +1,0 @@
-Contagios en España:
- Infectados: 1
- Graves: 1
- Aislados sin fiebre: 17 Madrid, 1 Santander
- Seguimiento: 56

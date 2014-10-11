@@ -1,30 +1,36 @@
 from twython import Twython, TwythonError
-import sys
 import datetime
 import os
 
 folder = os.path.dirname(os.path.realpath(__file__))
-i = datetime.datetime.now()
+j = datetime.datetime.now()
 
 APP_KEY = '***REMOVED***'
 APP_SECRET = '***REMOVED***'
 OAUTH_TOKEN = '***REMOVED***'
 OAUTH_TOKEN_SECRET = '***REMOVED***'
 
-status = ''
-
-fd = open(os.path.join(folder,'db.txt'),'r')
-status = fd.read() + "\n" + i.strftime('%d%b %H:%Mh') + " #ebola"
-print len(status)
+st = ''
 
 # Requires Authentication as of Twitter API v1.1
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-try:
-#    user_timeline = twitter.get_user_timeline(screen_name='elEconomistaes')
-    twitter.update_status(status=status)
-#      tweets = twitter.get_home_timeline()
-except TwythonError as e:
-    print e
-    sys.exit()
 
-print "[+] Timeline updated succesfully..."
+for i in range(1,3):
+    print i
+    p = os.path.join(folder,'db'+str(i)+'.txt')
+    print p
+    if os.path.exists(p):       
+        fd = open(p,'r')
+        st = fd.read() + "\n" + j.strftime('%d%b %H:%Mh') + " #ebola"
+        print len(st)
+        #Update status
+        try:
+            twitter.update_status(status=st)
+        except Exception,e:
+            print str(e)
+            exit()
+        print "[+] Timeline %s updated succesfully..." % i
+    else:
+        break
+
+
